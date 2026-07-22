@@ -93,6 +93,8 @@ details {
     }
 }
 
+/* Footer */
+
 footer {
     background-color: var(--relaxingGreen);
     text-align: center;
@@ -103,6 +105,7 @@ footer {
     max-width: 125px;
 }
 
+/* Ændre udseende på E-mail i footer da det er et funktionel link og påtager sig standard tekst dekoration (<a>) */
 .e-mail {
     text-decoration: none;
     color: var(--darkGreen);
