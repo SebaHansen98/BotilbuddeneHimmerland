@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botilbuddene Himmerland</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="./assets/js/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html">
+            <img src="./assets/img/BHLogo.webp" alt="Botilbuddene Himmerlands logo" class="logo">
+        </a>
+        <!-- Her bruger jeg button tag som bruger JavaScript funktionen "getMenu", derefter er der indstadt et ikon fra FontAwesome -->
+        <button onclick="getMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+    <nav id="menu">
+
+        <a href="./index.html">Forside</a>
+        <!-- Der bliver brugt <details> i stedet for at lave en mere kompliceret menu i JavaScript -->
+        <!-- Dette valg er valgt på baggrund af de flere lage af undermenuer der skal oprettes -->
+        <!-- https://www.w3schools.com/tags/tag_details.asp -->
+        <details>
+            <summary>Om os</summary>
+            <a href="./omBotilbuddeneHimmerland.html">Om Botilbuddene Himmerland</a>
+            <a href="./tilgangeOgMetoder.html">Målgruppe, tilgange og metoder</a>
+            <a href="#">Værdigrundlag</a>
+            <a href="#">For pårørende</a>
+        </details>
+
+        <details>
+            <summary>Afdelinger</summary>
+            <a href="./noerrehus.html">Nørrehus</a>
+            <a href="./roennehus.html">Rønnehus</a>
+            <a href="./sallinghus.html">Sallinghus</a>
+        </details>
+
+        <a href="#">Kontakt</a>
+        <a href="#">Job</a>
+
+    </nav>
+    <main>
+        <div class="headerImg2">
+            <img src="./assets/img/aktivitetMedBoern2Header.webp" alt="Børn der er i aktivering i haven">
+        </div>
+        <section class="textSection">
+            <h2>Om Botilbuddene Himmerland</h2>
+            <h3 class="textTitle">Generel information</h3>
+            <p>Botilbuddene Himmerland er et socialpædagogisk tilbud beliggende i Himmerland, hvor vi
+                tilbyder støtteophold og aflastning til børn og unge i trygge og hjemlige rammer.</p>
+            <p>Vi lægger stor vægt på relationen mellem barnet og de voksne og arbejder for at skabe et roligt og
+                genkendeligt miljø, hvor barnet føler sig set, hørt og mødt med forståelse, anerkendelse og nærvær.</p>
+            <img src="./assets/img/sallinghusBlomster.webp" alt="Blomster i stuen hos Sallinghus">
+            <p>Opholdene er tidsafgrænsede og tilbagevendende og tilrettelægges som et supplement til barnets hverdag i
+                hjemmet eller plejefamilien. Gennem opholdene arbejder vi med at understøtte barnets trivsel og
+                udvikling, herunder sociale kompetencer, ved at skabe positive og succesfulde oplevelser i trygge
+                rammer.</p>
+            <p>Hos Botilbuddene Himmerland tager vi udgangspunkt i det enkelte barn, som møder stabile og troværdige
+                voksne gennem hele opholdet.</p>
+            <h3 class="textTitle">Faciliteter</h3>
+            <p>Hos Botilbuddene Himmerland har vi tre huse, der bruges til botilbuddene. Disse huse fungere som normale
+                huse, de er indrettet med fokus på et roligt miljø.</p>
+            <p>
+                Der er en grøn have med plads til aktiviteter. I dem alle er der også plads til indendørs aktiviteter,
+                som digitale spil og brætspil. Udover dette er der også værelser til børnene, skulle de have brug for en
+                pause fra aktiviteter.</p>
+            <p>
+                Der er ligesom i normale huse både køkken. badeværelse og en rummelig stue, så det ikke føles som en
+                anstalt men mere som et hjem væk fra hjemmet.</p>
+            <img src="./assets/img/roennehusSpil.webp" alt="Brætspil i stuen ved Rønnehus">
+            <h3 class="textTitle">Et godt samarbejde</h3>
+            <p>Hos Botilbuddene Himmerland har vi fokus på at møde barnet eller den unge med forståelse, anerkendelse og
+                tydelig struktur. Vi tilrettelægger indsatsen med udgangspunkt i den enkeltes behov og i tæt samarbejde
+                med familien og relevante samarbejdspartnere.</p>
+            <p>Vi vægter et trygt og respektfuldt samarbejde, hvor barnet eller den unge oplever genkendelighed og
+                sammenhæng mellem opholdet og hverdagen uden for tilbuddet. Samarbejdet med familien er en central del
+                af indsatsen og bidrager til at skabe kontinuitet og udvikling på tværs af barnets samlede
+                livssituation.</p>
+            <img src="./assets/img/barnVedStrand.webp" alt="Et barn der udforsker en strand">
+        </section>
+        <div class="break"></div>
+        <section class="relatedArticles">
+            <p>Få mere information om Botilbuddene Himmerland</p>
+            <div class="articleCard">
+                <img src="./assets/img/kvindeMedTelefon.webp" alt="En kvinde der bruger en telefon">
+                <a href="./kontakt.html" class="ctaButton">Kontakt information<i class="fa-solid fa-play"></i></a>
+            </div>
+            <div class="articleCard">
+                <img src="./assets/img/roennehusLeg.webp" alt="Børn der leger inden i oppustede bolde">
+                <a href="./tilgangeOgMetoder.html" class="ctaButton">Tilgange, metoder og mere<i
+                        class="fa-solid fa-play"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footerLogo" src="./assets/img/BHLogo.webp" alt="Botilbuddene Himmerlands logo">
+        <a href="#header" class="top"></a>
+        <p>Adresse: Kornumvej 4, 9670 Løgstør</p>
+        <p>CVR: 39906023</p>
+        <p>Telefon: +45 61 67 43 01 / 29 33 72 67</p>
+        <p><a class="e-mail" href="mailto:kontakt@botilbuddenehimmerland.dk">E-mail:
+                kontakt@botilbuddenehimmerland.dk</a></p>
+        <p>Ophavsret ©</p>
+    </footer>
+</body>
+
+</html>
