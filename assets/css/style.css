@@ -251,6 +251,8 @@ details {
     color: var(--darkGreen);
 }
 
+/* Kontaktside */
+
 .kontaktForm {
     background-color: var(--relaxingGreen);
     padding: var(--smSpacer);
@@ -295,6 +297,35 @@ textarea {
     margin-bottom: 8px;
 }
 
+
+.medbarbejdere {}
+
+.kontaktPerson {
+    margin: auto;
+    display: flex;
+    padding-bottom: var(--mdSpacer);
+    max-width: 450px;
+
+    img {
+        border-radius: 100%;
+        width: 150px;
+    }
+}
+
+.information {
+    margin-left: var(--smSpacer);
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: var(--darkGreen);
+        overflow-wrap: anywhere;
+        font-size: 14px;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -306,6 +337,8 @@ footer {
 
 .footerLogo {
     max-width: 125px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+    border-radius: 50%;
 }
 
 .top {
