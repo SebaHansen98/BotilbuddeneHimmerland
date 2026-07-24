@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botilbuddene Himmerland</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="./assets/js/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="topOfPage"></div>
+    <header class="header">
+        <a href="./index.html">
+            <img src="./assets/img/BHLogo.webp" alt="Botilbuddene Himmerlands logo" class="logo">
+        </a>
+        <!-- Her bruger jeg button tag som bruger JavaScript funktionen "getMenu", derefter er der indstadt et ikon fra FontAwesome -->
+        <button onclick="getMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+    <nav id="menu">
+
+        <a href="./index.html">Forside</a>
+        <!-- Der bliver brugt <details> i stedet for at lave en mere kompliceret menu i JavaScript -->
+        <!-- Dette valg er valgt på baggrund af de flere lage af undermenuer der skal oprettes -->
+        <!-- https://www.w3schools.com/tags/tag_details.asp -->
+        <details>
+            <summary>Om os</summary>
+            <a href="./omBotilbuddeneHimmerland.html">Om Botilbuddene Himmerland</a>
+            <a href="./tilgangeOgMetoder.html">Målgruppe, tilgange og metoder</a>
+            <a href="#">Værdigrundlag</a>
+            <a href="#">For pårørende</a>
+        </details>
+
+        <details>
+            <summary>Afdelinger</summary>
+            <a href="./noerrehus.html">Nørrehus</a>
+            <a href="./roennehus.html">Rønnehus</a>
+            <a href="./sallinghus.html">Sallinghus</a>
+        </details>
+
+        <a href="#">Kontakt</a>
+        <a href="#">Job</a>
+
+    </nav>
+    <main>
+        <div class="headerImg2">
+            <img src="./assets/img/boerneBoeger.webp" alt="Børn der er i aktivering i haven">
+        </div>
+        <nav class="breadcrumb">
+            <a href="#">Om os</a>
+            <span class="arrow">></span>
+            <a href="./tilgangeOgMetoder.html">Målgruppe, tilgange...</a>
+        </nav>
+        <section class="textSection">
+            <h2>Målgruppe, tilgange og metoder</h2>
+            <h3 class="textTitle">Målgruppe</h3>
+            <p>Tilbuddet henvender sig til børn og unge med blandt andet:
+            </p>
+            <ul class="maalgruppe">
+                <li>Børn og unge i aldersgruppen 6-18 år</li>
+                <li>Udfordring inden for autismespektret</li>
+                <li>Opmærksomhedsforstyrrelser som ADHD</li>
+                <li>Udviklings- og adfærdsmæssige vanskeligheder</li>
+                <li>Udfordringer i relationer og trivsel</li>
+            </ul>
+            <img src="./assets/img/kidsPlaying.webp" alt="Børn der leger med sæbebobler">
+            <div class="break"></div>
+            <h3 class="textTitle">Tilgange og metoder</h3>
+            <p>Hos Botilbuddene Himmerland arbejder vi med en pædagogisk tilgang, der har fokus på trivsel, tryghed og
+                udvikling i hverdagen.</p>
+            <p>Vores tilgang er inspireret af anerkendende, strukturerede og relationsbaserede perspektiver, hvor vi
+                tilpasser indsatsen til det enkelte barn eller den unge og til rammerne for støtteophold..</p>
+            <img src="./assets/img/aktivitetMedBoern.webp" alt="Aktivering af børn i haven">
+            <div class="break"></div>
+            <h2>Tilgange</h2>
+            <h3 class="textTitle">Anerkendende tilgang</h3>
+            <p>Vi møder barnet eller den unge med respekt, forståelse og nysgerrighed. Vi tager udgangspunkt i barnets
+                perspektiv og arbejder med at styrke selvforståelse, relationer og tryghed i samspillet med andre.</p>
+            <img src="./assets/img/teamwork.webp" alt="Fire mennesker der har sammenspil med andre">
+
+            <h3 class="textTitle">Struktur og forudsigelighed</h3>
+            <p>Vi arbejder med tydelige rammer og genkendelighed i hverdagen. Gennem struktur og forudsigelighed
+                understøtter vi barnets mulighed for ro, overblik og deltagelse i fællesskaber.</p>
+
+            <img src="./assets/img/stueMalerier.webp" alt="Et billede af 3 malerier i en stue">
+            <h3 class="textTitle">Relationsarbejde i hverdagen</h3>
+            <p>Vi anvender hverdagen som en pædagogisk ramme, hvor relationer, samspil og daglige aktiviteter er
+                centrale elementer i barnets trivsel og udvikling.</p>
+
+            <img src="./assets/img/roennehusLeg.webp" alt="Børn der leger med oppustede bolde">
+            <div class="break"></div>
+            <h2>Metoder</h2>
+            <p>Vi henter inspiration fra forskellige pædagogiske metoder og tilgange, som anvendes i det omfang, det
+                giver mening i det enkelte forløb.</p>
+            <h3 class="textTitle">KRAP</h3>
+            <p>Vi arbejder med en ressourcefokuseret tilgang inspireret af KRAP, hvor fokus er på at styrke barnets
+                ressourcer, mestring og positive udvikling.</p>
+            <img src="./assets/img/sallinghusBamse.webp" alt="En blæksprutte bamse hos Sallinghus">
+            <h3 class="textTitle">Low Arousal</h3>
+            <p>Vi anvender principper fra Low Arousal i vores tilgang til konflikthåndtering og trivsel. Det indebærer,
+                at vi møder barnet med ro og afstemte reaktioner, så der skabes trygge rammer og færre konflikter i
+                hverdagen.</p>
+            <img src="./assets/img/barnKederSig.webp" alt="Et billede af 3 malerier i en stue">
+
+        </section>
+        <div class="break"></div>
+        <section class="relatedArticles">
+            <p>Få mere information om Botilbuddene Himmerland</p>
+            <div class="articleCard">
+                <img src="./assets/img/kvindeMedTelefon.webp" alt="En kvinde der bruger en telefon">
+                <a href="./kontakt.html" class="ctaButton">Kontakt information<i class="fa-solid fa-play"></i></a>
+            </div>
+            <div class="articleCard">
+                <img src="./assets/img/aktivitetMedBoern2.webp" alt="Børn der bliver aktiveret i haven">
+                <a href="./omBotilbuddeneHimmerland.html" class="ctaButton">Læs om os<i
+                        class="fa-solid fa-play"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footerLogo" src="./assets/img/BHLogo.webp" alt="Botilbuddene Himmerlands logo">
+        <a href="#topOfPage" class="top"><i class="fa-solid fa-house"></i></a>
+        <p>Adresse: Kornumvej 4, 9670 Løgstør</p>
+        <p>CVR: 39906023</p>
+        <p>Telefon: +45 61 67 43 01 / 29 33 72 67</p>
+        <p><a class="e-mail" href="mailto:kontakt@botilbuddenehimmerland.dk">E-mail:
+                kontakt@botilbuddenehimmerland.dk</a></p>
+        <p>Ophavsret ©</p>
+    </footer>
+</body>
+
+</html>

@@ -155,6 +155,19 @@ details {
     }
 }
 
+.breadcrumb {
+
+    a {
+        text-decoration: underline;
+        color: var(--darkGreen);
+        padding-left: 8px;
+    }
+}
+
+.arrow {
+    color: var(--darkGreen);
+    padding-left: 8px;
+}
 
 /* Main */
 
@@ -233,16 +246,74 @@ details {
     }
 }
 
+.maalgruppe {
+    font-family: "Manrope", sans-serif;
+    color: var(--darkGreen);
+}
+
+.kontaktForm {
+    background-color: var(--relaxingGreen);
+    padding: var(--smSpacer);
+    border-radius: 5px;
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    button {
+        font-family: "Manrope", sans-serif;
+        display: inline-flex;
+        align-items: center;
+        background-color: var(--brightOrange);
+        padding: 6px 10px 10px 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: var(--darkerGreen);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
+        border-color: var(--darkOrange);
+        border-width: 2px;
+        border-style: groove;
+        font-size: 1rem;
+
+        i {
+            margin-left: 8px;
+        }
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: var(--smSpacer);
+    font-family: "Manrope", sans-serif;
+
+}
+
+textarea {
+    height: 150px;
+    margin-bottom: 8px;
+}
+
 /* Footer */
 
 footer {
     background-color: var(--relaxingGreen);
     text-align: center;
     padding: var(--smSpacer);
+    position: relative;
 }
 
 .footerLogo {
     max-width: 125px;
+}
+
+.top {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--darkerGreen);
+    font-size: 2rem;
 }
 
 /* Ændre udseende på E-mail i footer da det er et funktionel link og påtager sig standard tekst dekoration (<a>) */
