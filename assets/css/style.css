@@ -59,7 +59,7 @@ body {
 
 /* Header */
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -110,6 +110,11 @@ details {
     a {
         font-weight: normal;
     }
+}
+
+
+.navDesktop {
+    display: none;
 }
 
 /* Header */
@@ -440,6 +445,65 @@ footer {
         max-width: 1000px;
         margin: auto;
     }
+
+    .header button {
+        display: none;
+    }
+
+    .navDesktop {
+        display: flex;
+        align-items: center;
+        padding: var(--smSpacer);
+    }
+
+    .navLinks {
+        display: flex;
+        list-style: none;
+        gap: var(--mdSpacer);
+        margin: 0px;
+    }
+
+    .navLinks a {
+        text-decoration: none;
+        color: var(--darkerGreen);
+    }
+
+
+    .dropdownMenu {
+        display: none;
+        position: absolute;
+        padding: 0px;
+        min-width: 200px;
+        background: var(--relaxingGreen);
+        z-index: 1;
+        list-style: none;
+        border-radius: 5px;
+
+        li a {
+            display: block;
+            padding: 10px;
+        }
+    }
+
+    .navLinks a.active {
+        text-decoration: underline;
+    }
+
+    .navLinks li:hover {
+        transform: translateY(-3px);
+        transition: .2s;
+        z-index: 2;
+    }
+
+    .dropdown:hover .dropdownMenu {
+        display: block;
+    }
+
+    .dropdownMenu a:hover {
+        transform: translateY(-3px);
+        transition: .2s;
+    }
+
 
     .kidsPlaying {
         display: none;
