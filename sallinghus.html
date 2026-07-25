@@ -7,7 +7,9 @@
     <title>Botilbuddene Himmerland</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- <script src="./assets/js/app.js" defer></script> -->
     <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/sallinghus.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -16,13 +18,13 @@
 <body>
     <div id="topOfPage"></div>
     <header class="header">
-        <a href="./index.html">
-            <img src="./assets/img/BHLogo.webp" alt="Botilbuddene Himmerlands logo" class="logo">
-        </a>
         <!-- Her bruger jeg button tag som bruger JavaScript funktionen "getMenu", derefter er der indstadt et ikon fra FontAwesome -->
         <button onclick="getMenu()">
             <i class="fa-solid fa-bars"></i>
         </button>
+        <a href="./index.html">
+            <img src="./assets/img/BHLogo.webp" alt="Botilbuddene Himmerlands logo" class="logo">
+        </a>
 
     </header>
 
@@ -47,35 +49,50 @@
             <a href="./sallinghus.html">Sallinghus</a>
         </details>
 
-        <a href="#">Kontakt</a>
+        <a href="./kontakt.html">Kontakt</a>
         <a href="#">Job</a>
 
     </nav>
     <main>
         <div class="headerImg2">
-            <img src="./assets/img/sallinghusBamse.webp" alt="Børn der er i aktivering i haven">
+            <img src="./assets/img/noerrehusBamse.webp" alt="Børn der er i aktivering i haven">
         </div>
         <nav class="breadcrumb">
-            <a href="#">Om os</a>
+            <a href="#">Afdelinger</a>
             <span class="arrow">></span>
-            <a href="./tilgangeOgMetoder.html">Målgruppe, tilgange...</a>
+            <a href="./sallinghus.html">Sallinghus</a>
         </nav>
 
-        <!-- Headless CMS indhold her -->
-
-
-
+        <!-- Headless CMS indhold herunder -->
+        <div class="afdelingIndhold"></div>
+        <h2 class="imgSectionTitle">Billeder fra Sallinghus</h2>
+        <div class="galleri">
+            <div class="imgContainer">
+                <img src="./assets/img/sallinghusStue.webp" alt="Spise området i stuen hos Sallinghus">
+            </div>
+            <div class="imgContainer">
+                <img src="./assets/img/sallinghusBamse.webp" alt="En blæksprutte bamse hos Sallinghus">
+            </div>
+            <div class="imgContainer">
+                <img src="./assets/img/sallinghusBlomster.webp" alt="Blomster i stuen hos Sallinghus">
+            </div>
+            <div class="imgContainer">
+                <img src="./assets/img/sallinghusStue2.webp" alt="Sofa området hos Sallinghus">
+            </div>
+            <div class="imgContainer">
+                <img src="./assets/img/stueMalerier.webp" alt="Malerier hos Sallinghus">
+            </div>
+        </div>
         <div class="break"></div>
         <section class="relatedArticles">
-            <p>Få mere information om Botilbuddene Himmerland</p>
+            <p>Se vores andre afdelinger.</p>
             <div class="articleCard">
-                <img src="./assets/img/kvindeMedTelefon.webp" alt="En kvinde der bruger en telefon">
-                <a href="./kontakt.html" class="ctaButton">Kontakt information<i class="fa-solid fa-play"></i></a>
+                <img src="./assets/img/roennehus.webp" alt="Forsiden af Rønnehus bygningen">
+                <a href="./roennehus.html" class="ctaButton">Rønnehus<i class="fa-solid fa-play"></i></a>
             </div>
             <div class="articleCard">
-                <img src="./assets/img/aktivitetMedBoern2.webp" alt="Børn der bliver aktiveret i haven">
-                <a href="./omBotilbuddeneHimmerland.html" class="ctaButton">Læs om os<i
-                        class="fa-solid fa-play"></i></a>
+                <img src="./assets/img/noerrehus.webp" alt="Forsiden af Nørrehus bygningen">
+                <a href="./sallinghus.html" class="ctaButton">Nørrehus<i class="fa-solid fa-play"></i></a>
             </div>
         </section>
     </main>

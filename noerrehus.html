@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botilbuddene Himmerland</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- <script src="./assets/js/app.js" defer></script> -->
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/noerrehus.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="topOfPage"></div>
+    <header class="header">
+        <!-- Her bruger jeg button tag som bruger JavaScript funktionen "getMenu", derefter er der indstadt et ikon fra FontAwesome -->
+        <button onclick="getMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="./index.html">
+            <img src="./assets/img/BHLogo.webp" alt="Botilbuddene Himmerlands logo" class="logo">
+        </a>
+
+    </header>
+
+    <nav id="menu">
+
+        <a href="./index.html">Forside</a>
+        <!-- Der bliver brugt <details> i stedet for at lave en mere kompliceret menu i JavaScript -->
+        <!-- Dette valg er valgt på baggrund af de flere lage af undermenuer der skal oprettes -->
+        <!-- https://www.w3schools.com/tags/tag_details.asp -->
+        <details>
+            <summary>Om os</summary>
+            <a href="./omBotilbuddeneHimmerland.html">Om Botilbuddene Himmerland</a>
+            <a href="./tilgangeOgMetoder.html">Målgruppe, tilgange og metoder</a>
+            <a href="#">Værdigrundlag</a>
+            <a href="#">For pårørende</a>
+        </details>
+
+        <details>
+            <summary>Afdelinger</summary>
+            <a href="./noerrehus.html">Nørrehus</a>
+            <a href="./roennehus.html">Rønnehus</a>
+            <a href="./sallinghus.html">Sallinghus</a>
+        </details>
+
+        <a href="./kontakt.html">Kontakt</a>
+        <a href="#">Job</a>
+
+    </nav>
+    <main>
+        <div class="headerImg2">
+            <img src="./assets/img/noerrehusBamse.webp" alt="Børn der er i aktivering i haven">
+        </div>
+        <nav class="breadcrumb">
+            <a href="#">Afdelinger</a>
+            <span class="arrow">></span>
+            <a href="./noerrehus.html">Nørrehus</a>
+        </nav>
+
+        <!-- Headless CMS indhold herunder -->
+        <div class="afdelingIndhold"></div>
+        <h2 class="imgSectionTitle">Billeder fra Nørrehus</h2>
+        <div class="galleri">
+            <div class="imgContainer">
+                <img src="./assets/img/noerrehusBagside.webp" alt="Bagsiden af Nørrehus">
+            </div>
+            <div class="imgContainer">
+                <img src="./assets/img/noerrehusBamse.webp" alt="En løvebamse op en sofa i Nørrehus">
+            </div>
+            <div class="imgContainer">
+                <img src="./assets/img/noerrehusGadeskilt.webp" alt="Et gadeskilt hvor der står Nørregade">
+            </div>
+            <div class="imgContainer">
+                <img src="./assets/img/noerrehusVaerelse.webp" alt="Et værelse til barn hos Nørrehus">
+            </div>
+            <div class="imgContainer">
+                <img src="./assets/img/noerrehusVaerelseSeng.webp" alt="En seng i et værelse hos Nørrehus">
+            </div>
+        </div>
+        <div class="break"></div>
+        <section class="relatedArticles">
+            <p>Se vores andre afdelinger.</p>
+            <div class="articleCard">
+                <img src="./assets/img/roennehus.webp" alt="Forsiden af Rønnehus bygningen">
+                <a href="./roennehus.html" class="ctaButton">Rønnehus<i class="fa-solid fa-play"></i></a>
+            </div>
+            <div class="articleCard">
+                <img src="./assets/img/sallinghus.webp" alt="Forsiden af Sallinghus bygningen">
+                <a href="./sallinghus.html" class="ctaButton">Sallinghus<i class="fa-solid fa-play"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footerLogo" src="./assets/img/BHLogo.webp" alt="Botilbuddene Himmerlands logo">
+        <a href="#topOfPage" class="top"><i class="fa-solid fa-house"></i></a>
+        <p>Adresse: Kornumvej 4, 9670 Løgstør</p>
+        <p>CVR: 39906023</p>
+        <p>Telefon: +45 61 67 43 01 / 29 33 72 67</p>
+        <p><a class="e-mail" href="mailto:kontakt@botilbuddenehimmerland.dk">E-mail:
+                kontakt@botilbuddenehimmerland.dk</a></p>
+        <p>Ophavsret ©</p>
+    </footer>
+</body>
+
+</html>

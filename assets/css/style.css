@@ -72,6 +72,7 @@ header {
 
 .logo {
     height: 60px;
+    margin-right: var(--smSpacer);
 }
 
 
@@ -204,18 +205,20 @@ details {
 }
 
 .articleCard {
+    display: inline-block;
     background-color: var(--lighterGreen);
     border-radius: 5px;
     margin-left: var(--smSpacer);
     margin-right: var(--smSpacer);
     padding: var(--smSpacer);
     margin-bottom: var(--mdSpacer);
+    max-width: 450px;
 
 
     img {
         box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
         width: 100%;
-        height: 100%;
+        height: 250px;
         object-fit: cover;
         object-position: center;
         border-radius: 5px;
@@ -297,9 +300,6 @@ textarea {
     margin-bottom: 8px;
 }
 
-
-.medbarbejdere {}
-
 .kontaktPerson {
     margin: auto;
     display: flex;
@@ -326,6 +326,83 @@ textarea {
     }
 }
 
+/* Afdelinger */
+
+.afdelingArtikel {}
+
+.afdelingImg {
+    margin-top: 100px;
+    max-width: 92%;
+    margin: var(--mdSpacer) auto auto auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
+}
+
+.afdelingIndhold {
+
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        font-size: 2rem;
+    }
+
+    h3 {
+        padding: var(--smSpacer);
+        margin: auto;
+        padding-bottom: 0px;
+    }
+}
+
+.afdelingAdresse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.afdelingTekst {
+    padding: var(--smSpacer);
+    margin: auto;
+}
+
+.imgSectionTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleri {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--smSpacer);
+    max-width: 92%;
+    margin: auto;
+
+    img {
+        max-width: 100%;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
+    }
+}
+
+.imgContainer {
+    height: 280px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
 /* Footer */
 
 footer {
@@ -349,8 +426,20 @@ footer {
     font-size: 2rem;
 }
 
+.top:hover {
+    transform: translateY(-5px);
+    transition: .2s;
+}
+
 /* Ændre udseende på E-mail i footer da det er et funktionel link og påtager sig standard tekst dekoration (<a>) */
 .e-mail {
     text-decoration: none;
     color: var(--darkGreen);
+}
+
+@media (min-width: 700px) {
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
 }
