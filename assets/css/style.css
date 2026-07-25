@@ -328,8 +328,6 @@ textarea {
 
 /* Afdelinger */
 
-.afdelingArtikel {}
-
 .afdelingImg {
     margin-top: 100px;
     max-width: 92%;
@@ -431,7 +429,7 @@ footer {
     transition: .2s;
 }
 
-/* Ændre udseende på E-mail i footer da det er et funktionel link og påtager sig standard tekst dekoration (<a>) */
+/* Ændrer udseende på E-mail i footer da det er et funktionel link og påtager sig standard tekst dekoration (<a>) */
 .e-mail {
     text-decoration: none;
     color: var(--darkGreen);
@@ -442,4 +440,48 @@ footer {
         max-width: 1000px;
         margin: auto;
     }
+
+    .kidsPlaying {
+        display: none;
+    }
+
+    .intro {
+        margin-top: var(--mdspacer);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 16px;
+        grid-template-areas:
+            "intro1 imgRight"
+            "intro2 imgRight";
+    }
+
+    p {
+        margin-bottom: 16px;
+        margin-top: 0px;
+    }
+
+    .intro1 {
+        grid-area: intro1;
+        padding: 0px;
+    }
+
+    .intro2 {
+        grid-area: intro2;
+    }
+
+    .imgRight {
+        grid-area: imgRight;
+    }
+
+    .textSection {
+        img {
+            max-height: 100%;
+        }
+    }
+
 }
+
+
+/* NOTER */
+/* husk at lav nav, header og footer om til desktop*/
