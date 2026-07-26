@@ -57,6 +57,10 @@ body {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header */
 
 .header {
@@ -194,6 +198,23 @@ details {
     }
 }
 
+.textSectionTM {
+    padding: var(--smSpacer);
+    margin: auto;
+
+    h2 {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
+
 .break {
     background-color: #202f2950;
     height: 2px;
@@ -312,7 +333,7 @@ textarea {
     max-width: 450px;
 
     img {
-        border-radius: 100%;
+        border-radius: 50%;
         width: 150px;
     }
 }
@@ -440,11 +461,15 @@ footer {
     color: var(--darkGreen);
 }
 
+/* Under udviklingen af desktop layoutet er det set at der er en uoptimal opsætning af HTML koden */
+/* Dette resultere i at der er blevet udviklet uoptimale løsninger på problemer, der ikke havde forekommet, havde HTMl opsætning været anderledes */
 @media (min-width: 700px) {
     main {
         max-width: 1000px;
         margin: auto;
     }
+
+    /* Navigation Desktop */
 
     .header button {
         display: none;
@@ -454,6 +479,7 @@ footer {
         display: flex;
         align-items: center;
         padding: var(--smSpacer);
+        padding-right: var(--mdSpacer);
     }
 
     .navLinks {
@@ -504,11 +530,11 @@ footer {
         transition: .2s;
     }
 
-
-    .kidsPlaying {
-        display: none;
+    .headerImg img {
+        height: 350px;
     }
 
+    /* Forside Desktop */
     .intro {
         margin-top: var(--mdspacer);
         display: grid;
@@ -544,8 +570,261 @@ footer {
         }
     }
 
+    /* Om Botilbuddene Himmerland */
+    .headerImg2 img {
+        height: 300px;
+    }
+
+    /* Her kommer en knap så optimal løsning på tekst og billede layoutet på siden. Det var den mest tidsoptimale løsning jeg kunne finde */
+    /* Der var problemer med selve HTML strukturen i forhold til at sætte indhold op i grid */
+    /* Problemet er opdaget da siden skulle skiftes til desktop layout */
+    /* HTML blev ikke organiseret om da tidsmangel forekom */
+
+
+    .textIndhold {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(11, auto);
+        column-gap: var(--mdSpacer);
+    }
+
+    /* Herunder bliver klasserne valgt og lagt i den kolonne/row der er ønsket, ligesom ved brug af grid-area*/
+    .p1BH {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .p2BH {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .p3BH {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .p4BH {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    /* Her bliver der valgt den første type af h3 med klassen textTitle inden i .textIndhold */
+    .textIndhold h3.textTitle:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .p5BH {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .p6BH {
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    .p7BH {
+        grid-column: 1;
+        grid-row: 8;
+    }
+
+    /* Her bliver der valgt den anden af typen af h3 med klassen textTitle inden i .textIndhold */
+    .textIndhold h3.textTitle:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 9;
+    }
+
+    .p8BH {
+        grid-column: 1;
+        grid-row: 10;
+    }
+
+    .p9BH {
+        grid-column: 1;
+        grid-row: 11;
+    }
+
+    /* Herunder får billederne deres kolonner, men også hvor mange rows de må fylde med fx grid-row: 1 / 5; */
+    .img1BH {
+        grid-column: 2;
+        grid-row: 1 / 5;
+    }
+
+    .img2BH {
+        grid-column: 2;
+        grid-row: 6 / 9;
+    }
+
+    .img3BH {
+        grid-column: 2;
+        grid-row: 10 / 12;
+    }
+
+    /* Målgruppe, tilgange og metoder Desktop */
+    /* Herunder bliver der brugt samme løsning som i "Om Botilbuddene Himmerland" til Målgruppe, tilgange og metoder siden */
+    .textSectionTM {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        max-width: 800px;
+    }
+
+    .textSectionTM * {
+        grid-column: 1;
+    }
+
+    .img1tm {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        margin-top: var(--xlSpacer);
+    }
+
+    .img2tm {
+        grid-column: 2;
+        grid-row: 5 / 7;
+    }
+
+    .img3tm {
+        grid-column: 2;
+        grid-row: 10 / 11;
+    }
+
+    .img4tm {
+        grid-column: 2;
+        grid-row: 12 / 13;
+    }
+
+    .img5tm {
+        grid-column: 2;
+        grid-row: 14 / 15;
+    }
+
+    .textSectionTM h2,
+    .textSectionTM .break {
+        grid-column: 1 / -1;
+    }
+
+    /* Her bliver teksten lagt i centrum da den ellers ville blive for lang */
+    .p7tm {
+        grid-column: 1 / 3;
+        justify-self: center;
+        width: 500px;
+    }
+
+    .textTitleTM7 {
+        grid-column: 2;
+        grid-row: 18 / 19;
+    }
+
+    .p9tm {
+        grid-column: 2;
+        grid-row: 19 / 20;
+    }
+
+    .img7tm {
+        grid-column: 2;
+        grid-row: 20 / 21;
+    }
+
+    /* Afdelinger Desktop*/
+
+    .afdelingTekst,
+    .afdelingArtikel h3 {
+        max-width: 800px;
+    }
+
+    /* Herunder bliver der brugt RAM grid til at ændre galleriets layout (repeat, auto-fit og minmax) */
+    .galleri {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--smSpacer);
+    }
+
+
+
+
 }
 
+@media (min-width: 850px) {
 
-/* NOTER */
-/* husk at lav nav, header og footer om til desktop*/
+    /* Footer Desktop */
+    footer {
+        display: grid;
+        /* Her bliver de inspireret fra problem fra Stack Overflow da jeg selv havde samme problem */
+        /* Jeg ville gøre grid-areas samme størrelse, og brugte derfor minmax som jeg fandt her: https://stackoverflow.com/questions/47601564/equal-width-columns-in-css-grid */
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(3, fr);
+        grid-template-areas:
+            "kontakt1 logo ."
+            "kontakt2 cvr ."
+            "kontakt3 ophavsret top"
+            "kontakt4 ophavsret top"
+        ;
+        row-gap: 0px;
+
+    }
+
+    .footerLogo {
+        grid-area: logo;
+        justify-self: center;
+    }
+
+    .top {
+        grid-area: top;
+    }
+
+    .kontaktInfoFooter1 {
+        grid-area: kontakt1;
+        text-align: left;
+        margin-top: 80px;
+    }
+
+    .kontaktInfoFooter2 {
+        grid-area: kontakt2;
+        text-align: left;
+    }
+
+    .kontaktInfoFooter3 {
+        grid-area: kontakt3;
+        text-align: left;
+    }
+
+    .kontaktInfoFooter4 {
+        grid-area: kontakt4;
+        text-align: left;
+    }
+
+    .CVR {
+        grid-area: cvr;
+    }
+
+    .ophavsret {
+        grid-area: ophavsret;
+    }
+
+    /* Kontakt Desktop */
+
+    .kontaktIntro {
+        max-width: 800px;
+        margin: auto auto var(--mdSpacer) auto;
+    }
+
+    .kontaktForm {
+        height: 500px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .kontaktForm textarea {
+        height: 245px;
+    }
+
+    .medbarbejdere {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: var(--smSpacer);
+    }
+
+}
